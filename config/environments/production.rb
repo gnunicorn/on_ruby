@@ -93,8 +93,8 @@ Rails.application.configure do
   config.active_record.dump_schema_after_migration = false
 
   # Set the default host for production
-  config.default_host = 'onruby.de'
-  config.middleware.use 'CookieDomain', '.onruby.de'
+  config.default_host = 'demokratie-in-bewegung.org'
+  config.middleware.use 'CookieDomain', '.demokratie-in-bewegung.org'
   config.middleware.use ExceptionNotification::Rack, email: {
     email_prefix: '[ERROR] ',
     sender_address: %("error-notifier" <onruby@googlemail.com>),
